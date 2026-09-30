@@ -1,0 +1,32 @@
+{
+  "name": "rehabbridge-motion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "assets": "node scripts/assets.mjs",
+    "dev": "vite --host 127.0.0.1",
+    "build": "npm run assets && tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "format": "prettier --write src scripts tests *.ts *.json index.html",
+    "check:production": "node scripts/check-production.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "1.0.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.0",
+    "@types/node": "22.15.32",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "@vitejs/plugin-react": "4.5.2",
+    "prettier": "3.5.3",
+    "typescript": "5.8.3",
+    "vite": "7.3.5",
+    "vitest": "4.1.11"
+  }
+}

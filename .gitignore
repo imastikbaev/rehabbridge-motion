@@ -1,0 +1,27 @@
+node_modules/
+dist/
+public/vision/
+public/models/
+test-results/
+playwright-report/
+*.tsbuildinfo
+.env*
+.DS_Store
+
+.deploy-vercel/
+
+.vercel/
+
+# Generated browser evidence; may be regenerated locally.
+docs/**/*.png
+docs/*.png
+docs/production-check.json
+
+# Local/private files must never enter the submission.
+*.sqlite
+*.sqlite3
+*.db
+*.pem
+*.key
+.venv/
+coverage/
